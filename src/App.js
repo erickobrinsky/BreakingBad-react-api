@@ -27,7 +27,7 @@ const Boton = styled.button`
 
 function App() {
 
-  // state de frases
+  // state of phrases
   const [frase, guardarFrase] = useState({});
 
 
@@ -38,7 +38,7 @@ function App() {
   }
 
 
-  // Cargar una frase
+  // Add a phrase
   useEffect( () => {
     consultarAPI()
   }, []);
@@ -52,7 +52,7 @@ function App() {
       <Boton
         onClick={consultarAPI}
       >
-        Obtener Frase
+        Get Phrase
       </Boton>
     </Contenedor>
   );
